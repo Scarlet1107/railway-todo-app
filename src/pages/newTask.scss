@@ -1,0 +1,61 @@
+@charset "utf-8";
+@import "./_variables.scss";
+.new-task {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.new-task-form {
+  color: $gray;
+}
+
+.new-task-select-list,
+.new-task-title,
+.new-task-detail {
+  width: 300px;
+  margin-bottom: 25px;
+}
+
+.new-task-detail {
+  height: 200px;
+}
+
+.new-task-button {
+  @include button($white);
+}
+
+.error-message {
+  color: $red;
+}
+.calendar {
+    border: 1px solid #ccc;
+    width: 300px;
+    margin: auto;
+
+    .calendar-header {
+        text-align: center;
+        padding: 10px;
+        background-color: #f0f0f0;
+    }
+
+    .calendar-body {
+        .days-of-week {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            background-color: #f9f9f9;
+
+            .day {
+                text-align: center;
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+            }
+        }
+
+        .dates {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+
+            // 日付のスタイル
+        }
+    }
+}

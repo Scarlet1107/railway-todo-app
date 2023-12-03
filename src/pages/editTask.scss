@@ -1,0 +1,32 @@
+@charset "utf-8";
+@import "./_variables.scss";
+
+.edit-task {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.edit-task-form {
+  color: $gray;
+}
+
+.edit-task-title,
+.edit-task-detail {
+  width: 300px;
+  margin-bottom: 25px;
+}
+
+.delete-task-button {
+  @include button($red);
+  border: solid 1px $red;
+  margin: 25px 5px;
+  background-color: default;
+}
+
+.edit-task-button {
+  @include button($white);
+}
+
+.error-message {
+  color: $red;
+}

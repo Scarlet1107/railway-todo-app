@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "./_variables.scss";
 
 .edit-list {
   width: 1000px;
@@ -6,7 +7,7 @@
 }
 
 .edit-list-form {
-  color: #555555;
+  color: $gray;
 }
 
 .edit-list-title {
@@ -15,22 +16,16 @@
 }
 
 .delete-list-button {
-  color: #ff3333;
-  border: solid 1px #ff3333;
-  width: 80px;
-  height: 40px;
+  @include button($red);
+  border: solid 1px $red;
   margin: 25px 5px;
-  border-radius: 5px;
+  background-color: initial;
 }
 
 .edit-list-button {
-  background-color: #242F9B;
-  color: #ffffff;
-  width: 80px;
-  height: 40px;
-  border-radius: 5px;
+  @include button($white);
 }
 
 .error-message {
-  color: #ff3333;
+  color: $red;
 }

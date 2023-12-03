@@ -1,15 +1,17 @@
 @charset "utf-8";
-
+@import "./_variables.scss";
 .signup {
   width: 500px;
   margin: 0 auto;
 }
 .signup-form {
   margin: 25px 0;
-  color: #555555;
+  color: $gray;
 }
 
-.email-input, .name-input, .password-input {
+.email-input,
+.name-input,
+.password-input {
   width: 100%;
   font-size: large;
   height: 30px;
@@ -17,13 +19,10 @@
 }
 
 .signup-button {
-  background-color: #242F9B;
-  color: #ffffff;
+  @include button($white);
   width: 100px;
-  height: 40px;
-  border-radius: 5px;
 }
 
 .error-message {
-  color: #ff3333;
+  color: $red;
 }
